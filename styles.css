@@ -18,7 +18,7 @@ header {
     text-align: center;
     padding: 20px;
     background-color: #282a36;
-    color: #50fa7b;
+    color: #e0ab77;
 }
 
 header h1 {
@@ -42,22 +42,49 @@ section {
 }
 
 /* Skills Styles */
-#skills ul {
-    list-style-type: none;
+#skills {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #1e1e2f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+#skills h2 {
+    text-align: center;
+    color: #e0ab77;
+    margin-bottom: 20px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
     padding: 0;
+    list-style: none;
+    text-align: center;
 }
 
-#skills ul li {
-    margin: 10px 0;
-    font-size: 18px;
-    transition: transform 0.3s ease, color 0.3s ease;
+.skills-grid div {
+    background: #282a36;
+    color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
     cursor: pointer;
+}
+
+.skills-grid div:hover {
+    background: #44475a;
+    transform: scale(1.05);
 }
 
 /* Projects Links */
 a {
     text-decoration: none;
-    color: #50fa7b;
+    color: #e0ab77;
     position: relative;
     transition: color 0.3s ease;
 }
